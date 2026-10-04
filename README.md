@@ -4,7 +4,7 @@
 This repository contains projects and experiments developed using the **Raspberry Pi Pico (RP2040)** microcontroller.  
 It includes embedded system programs demonstrating hardware control, GPIO operations, and microcontroller-based applications.
 
-The Raspberry Pi Pico is a low-cost microcontroller widely used for IoT, automation, and embedded systems development. :contentReference[oaicite:1]{index=1}  
+The Raspberry Pi Pico is a low-cost microcontroller widely used for IoT, automation, and embedded systems development. 
 
 ---
 
