@@ -1,65 +1,74 @@
-# RaspberryPi-PICO Projects
+# Raspberry Pi Pico — DHT22 Sensor Project
 
-A collection of embedded-systems experiments and programs built around the **Raspberry Pi Pico (RP2040)**. This repository documents practical work with microcontrollers, GPIO, hardware interaction, and sensor-based projects.
+A MicroPython project for the **Raspberry Pi Pico (RP2040)** that reads temperature and relative humidity from a DHT22 sensor. The repository includes a custom driver using the RP2040's Programmable I/O (PIO), plus I²C LCD support modules.
 
-## Project areas
+## Features
 
-- GPIO control and LED experiments
-- Microcontroller programming
-- Sensor integration and hardware interaction
-- Temperature and humidity calculator / sensor work
-- Embedded programming examples using MicroPython and C/C++ where applicable
+- DHT22 temperature and humidity readings
+- RP2040 PIO state machine for sensor timing and data capture
+- Configurable sensor data and optional power-control pins
+- Checksum validation before returning readings
+- I²C LCD helper modules included in the repository
+- Repeated sensor polling with a delay between readings
 
 ## Hardware
 
-- Raspberry Pi Pico (RP2040)
-- USB cable
-- Breadboard and jumper wires
-- LEDs and suitable resistors
-- Compatible sensors for sensor-based experiments
+- Raspberry Pi Pico / RP2040 board
+- DHT22 temperature and humidity sensor
+- Jumper wires and breadboard
+- Optional I²C LCD compatible with the included helper modules
 
-## Software and tools
+### Example wiring
 
-- MicroPython firmware
-- Thonny IDE or Visual Studio Code
-- Raspberry Pi Pico SDK for C/C++ projects, where used
+| Component | Pico GPIO |
+| --- | --- |
+| DHT22 data | GP15 |
+| Optional sensor power control | GP14 |
 
-## Getting started
+Check your sensor module's pinout and electrical requirements before wiring. Never connect a 5 V signal directly to a Pico GPIO.
 
-1. Connect the Raspberry Pi Pico to your computer.
-2. Install the appropriate MicroPython firmware if the project uses MicroPython.
-3. Open the relevant source file in Thonny or another compatible editor.
-4. Connect the hardware components required by that example.
-5. Upload the program to the Pico and run it.
+## Repository files
 
-> Check the individual source file and wiring requirements before connecting hardware. Pin assignments and required components may differ between experiments.
+| File | Purpose |
+| --- | --- |
+| `DHT22.py` | DHT22 driver using RP2040 PIO |
+| `main.py` | Main sensor example |
+| `lcd_api.py` | LCD API helper |
+| `pico_i2c_lcd.py` | I²C LCD driver helper |
 
-## Repository layout
+## Requirements
 
-The repository contains individual experiment and program files. Refer to each file for its purpose, required components, and setup notes.
+- Raspberry Pi Pico with MicroPython firmware supporting `rp2` PIO
+- Thonny or another MicroPython-compatible editor
+- DHT22 sensor and wiring
 
-## Learning outcomes
+## Run the project
 
-- Understanding the RP2040 microcontroller
-- Using GPIO for hardware control
-- Connecting software with physical components
-- Working with sensors and embedded programming
-- Developing and testing small hardware-focused applications
+1. Flash compatible MicroPython firmware to the Pico.
+2. Connect the DHT22 data line to GP15 as used by the example.
+3. Copy `DHT22.py`, `main.py`, and the LCD helper files (if required) to the board.
+4. Open the serial/REPL output in Thonny.
+5. Run `main.py` and monitor the temperature and humidity readings.
 
-## Screenshots and demonstrations
+The example configures GP14 as an optional sensor power-control pin. Adjust the code and wiring if your setup differs.
 
-Project photos, wiring diagrams, and demonstration videos will be added as the hardware work is documented.
+## What this project demonstrates
+
+- MicroPython development on a microcontroller
+- RP2040 PIO state-machine concepts
+- Digital sensor communication
+- Hardware/software integration
+- I²C display driver modules
 
 ## Future improvements
 
-- Add wiring diagrams for each hardware project
-- Document sensor pinouts and calibration
-- Add short demonstration videos
-- Explore IoT and wireless communication projects
+- Add a wiring diagram and real hardware photos
+- Add data logging and display output
+- Add Wi-Fi telemetry using a suitable network-enabled board
+- Document calibration and error-handling tests
 
 ## Author
 
-**Pratik Poudel**
+**Pratik Poudel** · [GitHub](https://github.com/pyatrick666)
 
-[GitHub profile](https://github.com/pyatrick666) · [Professional portfolio](https://pyatrick666.github.io/Professional-Portfolio/)
-
+> Hardware photos and a demonstration video will be added in a later update.
