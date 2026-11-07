@@ -1,98 +1,65 @@
 # RaspberryPi-PICO Projects
 
-## Overview
-This repository contains projects and experiments developed using the **Raspberry Pi Pico (RP2040)** microcontroller.  
-It includes embedded system programs demonstrating hardware control, GPIO operations, and microcontroller-based applications.
+A collection of embedded-systems experiments and programs built around the **Raspberry Pi Pico (RP2040)**. This repository documents practical work with microcontrollers, GPIO, hardware interaction, and sensor-based projects.
 
-The Raspberry Pi Pico is a low-cost microcontroller widely used for IoT, automation, and embedded systems development. 
+## Project areas
 
----
+- GPIO control and LED experiments
+- Microcontroller programming
+- Sensor integration and hardware interaction
+- Temperature and humidity calculator / sensor work
+- Embedded programming examples using MicroPython and C/C++ where applicable
 
-## Features
-
-- GPIO Control
-- LED Blinking Programs
-- Sensor Integration
-- Embedded System Examples
-- MicroPython / C/C++ based programs
-- Hardware Interaction Demonstrations
-
----
-
-## Technologies Used
+## Hardware
 
 - Raspberry Pi Pico (RP2040)
-- MicroPython / C/C++
-- Embedded Systems
-- GPIO Programming
-- Serial Communication
+- USB cable
+- Breadboard and jumper wires
+- LEDs and suitable resistors
+- Compatible sensors for sensor-based experiments
 
----
+## Software and tools
 
-## Hardware Requirements
+- MicroPython firmware
+- Thonny IDE or Visual Studio Code
+- Raspberry Pi Pico SDK for C/C++ projects, where used
 
-- Raspberry Pi Pico
-- USB Cable
-- Breadboard
-- LEDs
-- Resistors
-- Sensors (optional)
+## Getting started
 
----
+1. Connect the Raspberry Pi Pico to your computer.
+2. Install the appropriate MicroPython firmware if the project uses MicroPython.
+3. Open the relevant source file in Thonny or another compatible editor.
+4. Connect the hardware components required by that example.
+5. Upload the program to the Pico and run it.
 
-## Software Requirements
+> Check the individual source file and wiring requirements before connecting hardware. Pin assignments and required components may differ between experiments.
 
-- Thonny IDE / VS Code
-- MicroPython Firmware
-- Raspberry Pi Pico SDK (optional)
+## Repository layout
 
----
+The repository contains individual experiment and program files. Refer to each file for its purpose, required components, and setup notes.
 
-## Installation
+## Learning outcomes
 
-1. Connect Raspberry Pi Pico to your computer.
-2. Install MicroPython firmware.
-3. Open Thonny IDE.
-4. Upload project files.
-5. Run the program.
+- Understanding the RP2040 microcontroller
+- Using GPIO for hardware control
+- Connecting software with physical components
+- Working with sensors and embedded programming
+- Developing and testing small hardware-focused applications
 
----
+## Screenshots and demonstrations
 
-## Usage
+Project photos, wiring diagrams, and demonstration videos will be added as the hardware work is documented.
 
-- Run programs to test hardware components.
-- Modify code to integrate new sensors.
-- Use projects as learning examples for embedded development.
+## Future improvements
 
----
-
-## Learning Outcomes
-
-- Understanding GPIO control
-- Microcontroller programming basics
-- Hardware and software integration
-- Embedded system design
-
----
-
-## Future Improvements
-
-- Add IoT integration
-- Wireless communication support
-- More sensor-based projects
-- Real-time monitoring systems
-
----
+- Add wiring diagrams for each hardware project
+- Document sensor pinouts and calibration
+- Add short demonstration videos
+- Explore IoT and wireless communication projects
 
 ## Author
 
-**Patrick**
+**Pratik Poudel**
 
-GitHub: https://github.com/pyatrick666
-
----
-
-## License
-
-This project is open-source and available under the **MIT License**.
+[GitHub profile](https://github.com/pyatrick666) · [Professional portfolio](https://pyatrick666.github.io/Professional-Portfolio/)
 
